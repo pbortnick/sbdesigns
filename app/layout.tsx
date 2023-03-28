@@ -1,5 +1,6 @@
-import { Nunito, Alegreya } from 'next/font/google'
-import 'styles/index.css'
+import { Nunito, Red_Hat_Mono } from 'next/font/google'
+import './globals.css'
+import Nav from '@/components/nav'
 
 const nunito = Nunito({
   variable: '--font-nunito',
@@ -9,8 +10,8 @@ const nunito = Nunito({
   display: 'swap',
 })
 
-const alegreya = Alegreya({
-  variable: '--font-alegreya',
+const redhatmono = Red_Hat_Mono({
+  variable: '--font-martian-mono',
   weight: ['400', '500', '600', '700'],
   style: ['normal'],
   subsets: ['latin'],
@@ -28,8 +29,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${nunito.variable} ${alegreya.variable}`}>
-      <body>{children}</body>
+    <html lang="en" className={`${nunito.variable} ${redhatmono.variable}`}>
+      <body>
+        <Nav />
+        <main className="max-w-m md:max-w-lg lg:max-w-cl">{children}</main>
+      </body>
     </html>
   )
 }
