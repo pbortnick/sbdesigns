@@ -31,8 +31,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${nunito.variable} ${redhatmono.variable}`}>
       <body>
-        <Nav />
-        <main className="max-w-m md:max-w-lg lg:max-w-cl">{children}</main>
+        <main className="h-screen pt-1">
+          <Nav />
+          {children}
+        </main>
       </body>
     </html>
   )

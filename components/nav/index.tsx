@@ -1,12 +1,18 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 export default function Nav() {
   return (
-    <div className="container flex justify-between">
-      <div></div>
+    <div className="container flex justify-between items-center">
+      <Image
+        src="/logo-horizontal.svg"
+        alt="homepage logo"
+        width={183}
+        height={36}
+      />
       <nav className="grid grid-flow-col gap-5 py-5">
         <NavLink href="/about" text="About" />
         <NavLink href="/testimonials" text="Testimonials" />
