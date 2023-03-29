@@ -1,6 +1,7 @@
 import { Nunito, Red_Hat_Mono } from 'next/font/google'
 import './globals.css'
 import Nav from '@/components/nav'
+import Footer from '@/components/footer'
 
 const nunito = Nunito({
   variable: '--font-nunito',
@@ -34,6 +35,7 @@ export default function RootLayout({
         <main className="h-screen pt-1">
           <Nav />
           {children}
+          <Footer />
         </main>
       </body>
     </html>

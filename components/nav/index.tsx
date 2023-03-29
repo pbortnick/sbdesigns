@@ -8,7 +8,7 @@ export default function Nav() {
   return (
     <div className="container flex justify-between items-center">
       <Image
-        src="/logo-horizontal.svg"
+        src="/logos/horizontal.svg"
         alt="homepage logo"
         width={183}
         height={36}
