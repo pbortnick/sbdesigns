@@ -1,14 +1,14 @@
 import { Nunito, Red_Hat_Mono } from 'next/font/google'
 import './globals.css'
-import Nav from '@/components/nav'
-import Footer from '@/components/footer'
+import Nav from 'components/nav'
+import Footer from 'components/footer'
 
 const nunito = Nunito({
   variable: '--font-nunito',
+  display: 'swap',
   weight: ['400', '500', '600'],
   style: ['normal'],
   subsets: ['latin'],
-  display: 'swap',
 })
 
 const redhatmono = Red_Hat_Mono({
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${nunito.variable} ${redhatmono.variable}`}>
       <body>
-        <main className="h-screen pt-1">
+        <main className="h-screen">
           <Nav />
           {children}
           <Footer />

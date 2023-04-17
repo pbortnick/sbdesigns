@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.17",
     "@types/node": "18.15.10",
     "@types/react": "18.0.30",
     "@types/react-dom": "18.0.11",
@@ -22,14 +23,17 @@
     "eslint-plugin-prettier": "^4.2.1",
     "next": "13.2.4",
     "postcss": "^8.4.21",
-    "prettier": "^2.8.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-focus-on": "^3.8.0",
+    "react-remove-scroll": "^2.5.5",
     "typescript": "5.0.2"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "postcss-preset-env": "^8.2.0",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.7",
     "tailwindcss": "^3.3.0"
   }
 }
