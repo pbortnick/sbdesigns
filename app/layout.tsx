@@ -1,7 +1,7 @@
 import { Nunito, Red_Hat_Mono } from 'next/font/google'
 import './globals.css'
-import Nav from 'components/nav'
-import Footer from 'components/footer'
+import Nav from 'app/Nav'
+import Footer from 'app/Footer'
 
 const nunito = Nunito({
   variable: '--font-nunito',
@@ -12,7 +12,7 @@ const nunito = Nunito({
 })
 
 const redhatmono = Red_Hat_Mono({
-  variable: '--font-martian-mono',
+  variable: '--font-redhatmono',
   weight: ['400', '500', '600', '700'],
   style: ['normal'],
   subsets: ['latin'],
