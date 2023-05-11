@@ -2,8 +2,9 @@
 
 import * as React from 'react'
 import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
-import { cva } from 'class-variance-authority'
+import { VariantProps, cva } from 'class-variance-authority'
 import { ChevronDown } from 'lucide-react'
+import Link from 'next/link'
 
 import { cn } from 'lib/utils'
 
@@ -43,8 +44,36 @@ NavigationMenuList.displayName = NavigationMenuPrimitive.List.displayName
 const NavigationMenuItem = NavigationMenuPrimitive.Item
 
 const navigationMenuTriggerStyle = cva(
-  'inline-flex items-center justify-center rounded-md  transition-colors focus:text-accent-foreground disabled:opacity-50 disabled:pointer-events-none  data-[active]:text-primary py-2 px-4 text-sm font-medium hover:text-primary font-sans bg-transparent hover:underline underline-offset-4 md:text-base'
+  'inline-flex items-center justify-center rounded-md  transition-colors focus:text-accent-foreground disabled:opacity-50 disabled:pointer-events-none  data-[active]:text-primary py-2 px-4 text-sm font-medium hover:text-primary font-sans bg-transparent hover:underline underline-offset-4 md:text-base',
+  { variants: { active: { true: 'border-r-2 border-l-2' } } }
 )
+
+const navigationMenuLinkVariants = cva(
+  'inline-flex items-center justify-center rounded-md  transition-colors focus:text-accent-foreground disabled:opacity-50 disabled:pointer-events-none  data-[active]:text-primary py-2 px-4 text-sm font-medium hover:text-primary font-sans bg-transparent hover:underline underline-offset-4 md:text-base',
+  { variants: { active: { true: 'border-r-2 border-l-2' } } }
+)
+
+export interface NavLinkProps
+  extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
+    VariantProps<typeof navigationMenuLinkVariants> {
+  href: string
+  children: string
+}
+
+const NavLink = React.forwardRef<HTMLAnchorElement, NavLinkProps>(
+  ({ active, children, ...props }, ref) => {
+    return (
+      <Link
+        className={cn(navigationMenuLinkVariants({ active }))}
+        ref={ref}
+        {...props}
+      >
+        {children}
+      </Link>
+    )
+  }
+)
+NavLink.displayName = 'NavLink'
 
 const NavigationMenuTrigger = React.forwardRef<
   React.ElementRef<typeof NavigationMenuPrimitive.Trigger>,
@@ -127,4 +156,5 @@ export {
   NavigationMenuLink,
   NavigationMenuIndicator,
   NavigationMenuViewport,
+  NavLink,
 }

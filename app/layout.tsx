@@ -1,4 +1,3 @@
-import MainNav from '@/components/main-nav'
 import './globals.css'
 import { inter, k2d, josefinSans } from 'lib/fonts'
 
@@ -17,7 +16,6 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${k2d.variable} ${josefinSans.variable}`}
       >
-        <MainNav />
         {children}
         {/* <Footer /> */}
       </body>

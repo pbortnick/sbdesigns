@@ -1,12 +1,11 @@
 'use client'
 
-import Link from 'next/link'
 import {
+  NavLink,
   NavigationMenu,
-  NavigationMenuLink,
   NavigationMenuList,
-  navigationMenuTriggerStyle,
 } from 'components/ui/navigation-menu'
+import { usePathname } from 'next/navigation'
 
 const navLinks = [
   {
@@ -18,16 +17,22 @@ const navLinks = [
   { text: 'Contact', href: '/contact' },
 ]
 
-export default function MainNav() {
+export default function MainNav({ bgColor }: { bgColor?: string }) {
+  const pathname = usePathname()
   return (
-    <NavigationMenu className="bg-gold-background">
+    <NavigationMenu className={`bg-${bgColor}`}>
       <NavigationMenuList>
         {navLinks.map(({ href, text }) => (
-          <Link key={text} href={href} legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              {text}
-            </NavigationMenuLink>
-          </Link>
+          // <Link key={text} href={href} legacyBehavior passHref>
+          <NavLink
+            key={text}
+            href={href}
+            // className={navigationMenuTriggerStyle()}
+            active={pathname === href}
+          >
+            {text}
+          </NavLink>
+          // </Link>
         ))}
       </NavigationMenuList>
     </NavigationMenu>
