@@ -1,9 +1,15 @@
-import Image from 'next/image'
+import AboutSection from '@/components/about-section'
+import Hero from '@/components/hero'
+import MainNav from '@/components/main-nav'
 
 export default function Home() {
   return (
-    <div className="min-h-screen min-w-screen bg-neutral-900">
-      <h1>SB Designs</h1>
-    </div>
+    <>
+      <MainNav className="bg-gold-background pb-6" />
+      <main>
+        <Hero />
+        <AboutSection />
+      </main>
+    </>
   )
 }
