@@ -14,7 +14,7 @@ export default function AboutSection() {
         <span className="underline underline-offset-4">at home</span>.
       </p>
       <Button asChild size="lg">
-        <Link href="/porfolio">View my portfolio</Link>
+        <Link href="/portfolio">View my portfolio</Link>
       </Button>
     </Container>
   )
