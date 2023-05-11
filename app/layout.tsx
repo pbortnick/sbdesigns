@@ -18,9 +18,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${k2d.variable} ${josefinSans.variable}`}
       >
-        <Container className="flex flex-col items-center gap-10 py-14 font-sans">
           {children}
-        </Container>
       </body>
     </html>
   )

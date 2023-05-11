@@ -7,6 +7,7 @@ interface ProjectProps {
   name: string
   slug: string
   description: string
+  details?: Array<{ heading: string; content: string }>
 }
 
 const projects: Array<ProjectProps> = [
@@ -21,8 +22,8 @@ const projects: Array<ProjectProps> = [
       {
         src: '/img/portfolio/jericho/kitchen.jpeg',
         alt: '',
-        width: 514,
-        height: 1136,
+        width: 1071,
+        height: 1000,
       },
       {
         src: '/img/portfolio/jericho/den.jpeg',
@@ -47,6 +48,14 @@ const projects: Array<ProjectProps> = [
     slug: 'jericho',
     description:
       'A suburban home that gives the feel of a secluded island resort.',
+    details: [
+      { heading: 'Size', content: '3500 sqft' },
+      {
+        heading: 'Space',
+        content: 'Rooms: 5 beds, 2 living spaces, kitchen, backyard',
+      },
+      { heading: 'Features', content: 'Backyard renovation with pool' },
+    ],
   },
 ]
 
