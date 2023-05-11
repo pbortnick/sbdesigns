@@ -5,8 +5,8 @@ import MainNav from '@/components/main-nav'
 export default function Home() {
   return (
     <>
-      <MainNav className="bg-gold-background" />
-      <main className="">
+      <MainNav className="bg-gold-background pb-6" />
+      <main>
         <Hero />
         <AboutSection />
       </main>
