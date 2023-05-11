@@ -5,7 +5,9 @@ import { Button } from './ui/button'
 export default function AboutSection() {
   return (
     <Container className="flex flex-col items-center justify-center gap-10 py-14 font-sans">
-      <h2 className="text-4xl font-bold">Feel at home in your home.</h2>
+      <h2 className="text-center text-4xl font-bold">
+        Feel at home in your home.
+      </h2>
       <p className="mx-auto max-w-4xl text-center text-lg font-light">
         My name is Sherry Bortnick and I am a passionate and attentive interior
         designer. I work to have an understanding of my clients&apos; style

@@ -5,8 +5,10 @@ export default function Hero() {
   return (
     <header className="background-halved relative w-full overflow-hidden bg-gold-halved">
       <Container className="flex w-full items-center justify-center">
-        <div className="flex w-7/12 justify-center rounded-sm bg-[#BE4B21] shadow-md shadow-stone-500">
-          <h1 className="py-5 font-k2d text-5xl text-slate-950">SB Designs</h1>
+        <div className="flex w-3/4 justify-center rounded-sm bg-[#BE4B21] shadow-md shadow-stone-500 md:w-7/12">
+          <h1 className="py-5 font-k2d text-2xl text-slate-950 md:text-5xl">
+            SB Designs
+          </h1>
         </div>
       </Container>
       <Image

@@ -41,7 +41,7 @@ const CardThumbnail = ({ src, alt, width, height }: ImageProps) => (
       width={width}
       height={height}
       className="h-full w-full rounded-tl-md rounded-tr-md object-cover object-top"
-			priority
+      priority
     />
   </div>
 )
