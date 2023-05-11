@@ -1,5 +1,6 @@
 import Container from '@/components/container'
 import MainNav from '@/components/main-nav'
+import 'yet-another-react-lightbox/styles.css'
 
 export default function PortfolioLayout({
   children,

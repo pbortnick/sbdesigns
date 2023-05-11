@@ -48,6 +48,7 @@ module.exports = {
           foreground: 'hsl(var(--card-foreground))',
         },
         gold: {
+          DEFAULT: 'rgb(184, 134, 11)',
           background: 'rgb(184, 134, 11)',
         },
       },

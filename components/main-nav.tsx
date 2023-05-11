@@ -17,10 +17,10 @@ const navLinks = [
   { text: 'Contact', href: '/contact' },
 ]
 
-export default function MainNav({ bgColor }: { bgColor?: string }) {
+export default function MainNav({ className }: { className?: string }) {
   const pathname = usePathname()
   return (
-    <NavigationMenu className={`bg-${bgColor}`}>
+    <NavigationMenu className={className}>
       <NavigationMenuList>
         {navLinks.map(({ href, text }) => (
           <NavLink key={text} href={href} active={pathname === href}>

@@ -1,6 +1,5 @@
 import Container from '@/components/container'
 import './globals.css'
-import 'yet-another-react-lightbox/styles.css'
 import { inter, k2d, josefinSans } from 'lib/fonts'
 
 export const metadata = {
@@ -18,7 +17,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${k2d.variable} ${josefinSans.variable}`}
       >
-          {children}
+        {children}
       </body>
     </html>
   )
