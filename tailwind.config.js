@@ -1,4 +1,4 @@
-// const { fontFamily } = require('tailwindcss/defaultTheme')
+const { fontFamily } = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -47,6 +47,9 @@ module.exports = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        gold: {
+          background: 'rgb(184, 134, 11)',
+        },
       },
       borderRadius: {
         lg: `var(--radius)`,
@@ -54,6 +57,7 @@ module.exports = {
         sm: 'calc(var(--radius) - 4px)',
       },
       fontFamily: {
+        sans: ['var(--font-inter)', ...fontFamily.sans],
         inter: ['var(--font-inter)'],
         k2d: ['var(--font-k2d)'],
       },
@@ -70,6 +74,10 @@ module.exports = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+      },
+      backgroundImage: {
+        'gold-halved':
+          'linear-gradient(180deg, rgb(184, 134, 11) 50%, #fff 50%)',
       },
     },
   },

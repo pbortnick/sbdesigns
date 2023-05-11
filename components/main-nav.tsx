@@ -20,7 +20,7 @@ const navLinks = [
 
 export default function MainNav() {
   return (
-    <NavigationMenu>
+    <NavigationMenu className="bg-gold-background">
       <NavigationMenuList>
         {navLinks.map(({ href, text }) => (
           <Link key={text} href={href} legacyBehavior passHref>
