@@ -15,6 +15,7 @@ export default function Hero() {
         width={1600}
         height={900}
         className="mx-auto -mt-10 h-auto max-h-[500px] w-full max-w-[90%] object-cover object-bottom"
+        priority
       />
     </header>
   )
