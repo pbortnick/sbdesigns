@@ -13,7 +13,7 @@ export default function AboutSection() {
         designer. I work to have an understanding of my clients&apos; style
         preferences which I use to create an environment where they feel happy,
         comfortable, and, most importantly,{' '}
-        <span className="underline underline-offset-4">at home</span>.
+        <span className="font-bold">at home</span>.
       </p>
       <Button asChild size="lg">
         <Link href="/portfolio">View my portfolio</Link>
