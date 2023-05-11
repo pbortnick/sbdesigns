@@ -23,16 +23,9 @@ export default function MainNav({ bgColor }: { bgColor?: string }) {
     <NavigationMenu className={`bg-${bgColor}`}>
       <NavigationMenuList>
         {navLinks.map(({ href, text }) => (
-          // <Link key={text} href={href} legacyBehavior passHref>
-          <NavLink
-            key={text}
-            href={href}
-            // className={navigationMenuTriggerStyle()}
-            active={pathname === href}
-          >
+          <NavLink key={text} href={href} active={pathname === href}>
             {text}
           </NavLink>
-          // </Link>
         ))}
       </NavigationMenuList>
     </NavigationMenu>

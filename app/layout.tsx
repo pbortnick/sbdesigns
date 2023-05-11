@@ -1,4 +1,6 @@
+import Container from '@/components/container'
 import './globals.css'
+import 'yet-another-react-lightbox/styles.css'
 import { inter, k2d, josefinSans } from 'lib/fonts'
 
 export const metadata = {
@@ -16,8 +18,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${k2d.variable} ${josefinSans.variable}`}
       >
-        {children}
-        {/* <Footer /> */}
+        <Container className="flex flex-col items-center gap-10 py-14 font-sans">
+          {children}
+        </Container>
       </body>
     </html>
   )
