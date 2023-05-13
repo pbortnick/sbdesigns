@@ -18,7 +18,10 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link rel="icon" href="/favicon.svg" type="image/png" sizes="32x32" />
-
+        <meta
+          property="og:image"
+          content="https://www.sbdesigns516.com/og-image.png"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <body

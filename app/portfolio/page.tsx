@@ -3,7 +3,6 @@ import {
   Card,
   CardContent,
   CardFooter,
-  CardHeader,
   CardThumbnail,
   CardTitle,
 } from '@/components/ui/card'
