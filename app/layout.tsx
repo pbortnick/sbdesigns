@@ -1,4 +1,3 @@
-import Container from '@/components/container'
 import './globals.css'
 import { inter, k2d, josefinSans } from 'lib/fonts'
 import Head from 'next/head'
