@@ -2,6 +2,7 @@ import Container from '@/components/container'
 import './globals.css'
 import { inter, k2d, josefinSans } from 'lib/fonts'
 import Head from 'next/head'
+import Footer from '@/components/footer'
 
 export const metadata = {
   title: 'Sb Designs',
@@ -24,6 +25,7 @@ export default function RootLayout({
         className={`${inter.variable} ${k2d.variable} ${josefinSans.variable}`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   )

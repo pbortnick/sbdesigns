@@ -34,13 +34,13 @@ const CardHeader = React.forwardRef<
 CardHeader.displayName = 'CardHeader'
 
 const CardThumbnail = ({ src, alt, width, height }: ImageProps) => (
-  <div className="relative grid max-h-[300px] w-full overflow-hidden">
+  <div className="relative h-[300px] max-h-[300px] w-full overflow-hidden">
     <Image
       src={src}
       alt={alt || ''}
       width={width}
       height={height}
-      className="h-full w-full rounded-tl-md rounded-tr-md object-cover object-top"
+      className="h-full w-full rounded-tl-md rounded-tr-md object-cover object-center"
       priority
     />
   </div>

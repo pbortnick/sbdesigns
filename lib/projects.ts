@@ -209,9 +209,9 @@ const projects: Array<ProjectProps> = [
   {
     coverImage: {
       alt: '',
-      src: '/img/portfolio/lakehouse/living.jpeg',
-      width: 1182,
-      height: 807,
+      src: '/img/portfolio/lakehouse/kitchen.jpeg',
+      width: 1460,
+      height: 972,
     },
     images: [
       {
@@ -263,11 +263,17 @@ const projects: Array<ProjectProps> = [
   {
     coverImage: {
       alt: '',
-      src: '/img/portfolio/downtown-nyc/living.jpeg',
+      src: '/img/portfolio/downtown-nyc/kitchen.jpeg',
       width: 1302,
       height: 1736,
     },
     images: [
+      {
+        alt: '',
+        src: '/img/portfolio/downtown-nyc/living.jpeg',
+        width: 1302,
+        height: 1736,
+      },
       {
         alt: '',
         src: '/img/portfolio/downtown-nyc/living-2.jpeg',
@@ -277,8 +283,8 @@ const projects: Array<ProjectProps> = [
       {
         alt: '',
         src: '/img/portfolio/downtown-nyc/bedroom.jpeg',
-        width: 1189,
-        height: 821,
+        width: 640,
+        height: 853,
       },
       {
         alt: '',
@@ -291,12 +297,6 @@ const projects: Array<ProjectProps> = [
         src: '/img/portfolio/downtown-nyc/kitchen-2.jpeg',
         width: 2170,
         height: 1627,
-      },
-      {
-        alt: '',
-        src: '/img/portfolio/lakehouse/.jpeg',
-        width: 1178,
-        height: 785,
       },
     ],
     name: 'Downtown Manhattan',
