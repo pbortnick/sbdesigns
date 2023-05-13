@@ -13,8 +13,7 @@ const navLinks = [
     href: '/',
   },
   { text: 'Portfolio', href: '/portfolio' },
-  // { text: 'About', href: '/about' },
-  { text: 'Contact', href: '/contact' },
+  { text: 'About', href: '/about' },
 ]
 
 export default function MainNav({ className }: { className?: string }) {
