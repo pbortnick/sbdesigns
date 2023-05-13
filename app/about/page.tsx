@@ -20,6 +20,7 @@ export default function About() {
                 alt="Sherry Bortnick"
                 width={764}
                 height={798}
+                priority
               />
             </div>
             <div className="flex flex-col gap-4 pt-10 font-sans md:px-24">
