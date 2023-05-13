@@ -6,11 +6,13 @@ export default function NextJsImage({
   imageProps: { alt, title, sizes, className, onClick },
   wrapperStyle,
 }: RenderPhotoProps) {
+  console.log({ photo })
   return (
     <div style={{ ...wrapperStyle, position: 'relative' }}>
       <Image
-        fill
-        src={photo}
+        width={photo.width}
+        height={photo.height}
+        src={photo.src}
         placeholder={'blurDataURL' in photo ? 'blur' : undefined}
         {...{ alt, title, sizes, className, onClick }}
       />

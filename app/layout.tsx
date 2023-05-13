@@ -1,6 +1,7 @@
 import Container from '@/components/container'
 import './globals.css'
 import { inter, k2d, josefinSans } from 'lib/fonts'
+import Head from 'next/head'
 
 export const metadata = {
   title: 'Sb Designs',
@@ -14,6 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/favicon.svg" type="image/png" sizes="32x32" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <body
         className={`${inter.variable} ${k2d.variable} ${josefinSans.variable}`}
       >
