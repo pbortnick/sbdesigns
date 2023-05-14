@@ -131,7 +131,7 @@ const projects: Array<ProjectProps> = [
       },
       {
         alt: '',
-        src: '/img/portfolio/manhattan/livin.jpeg',
+        src: '/img/portfolio/manhattan/living.jpeg',
         width: 2170,
         height: 1627,
       },

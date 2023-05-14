@@ -9,7 +9,7 @@ export default function About() {
       <MainNav />
       <Container className="py-12">
         <div className="grid gap-6 pb-8">
-          <h1 className="mx-auto font-k2d text-6xl tracking-wider">
+          <h1 className="mx-auto text-center font-k2d text-6xl tracking-wider">
             Meet Sherry
           </h1>
           <hr className="mx-auto h-1 w-3/4 bg-gold" />
