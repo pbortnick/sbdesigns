@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     images: ['https://www.sbdesigns516.com/og-image.png'],
   },
   icons: {
-    icon: '/favicon.svg',
+    icon: '/favicon.ico',
   },
   viewport: {
     width: 'device-width',
