@@ -63,13 +63,15 @@ export interface NavLinkProps
 const NavLink = React.forwardRef<HTMLAnchorElement, NavLinkProps>(
   ({ active, children, ...props }, ref) => {
     return (
-      <Link
-        className={cn(navigationMenuLinkVariants({ active }))}
-        ref={ref}
-        {...props}
-      >
-        {children}
-      </Link>
+      <li>
+        <Link
+          className={cn(navigationMenuLinkVariants({ active }))}
+          ref={ref}
+          {...props}
+        >
+          {children}
+        </Link>
+      </li>
     )
   }
 )
