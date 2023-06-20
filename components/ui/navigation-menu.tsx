@@ -49,10 +49,10 @@ const navigationMenuTriggerStyle = cva(
 )
 
 const navigationMenuLinkVariants = cva(
-  'inline-flex items-center justify-center rounded-md  transition-colors focus:text-accent-foreground disabled:opacity-50 disabled:pointer-events-none  data-[active]:text-primary py-2 px-4 text-sm font-medium hover:text-primary font-sans bg-transparent hover:underline underline-offset-4 md:text-base',
+  'inline-flex items-center justify-center rounded-md  transition-colors disabled:opacity-50 disabled:pointer-events-none  data-[active]:text-primary py-2 px-4 text-sm font-medium hover:text-primary font-sans bg-transparent hover:underline underline-offset-4 md:text-base',
   { variants: { 
 		active: { true: 'border-r-2 border-l-2' },
-		theme: { dark: 'hover:text-white text-slate-200', light: 'text-inherit' }
+		theme: { dark: 'hover:text-white text-slate-200 data-[active]:text-white', light: 'text-inherit focus:text-accent-foreground' }
 	} }
 )
 
