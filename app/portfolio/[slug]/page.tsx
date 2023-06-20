@@ -24,7 +24,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           </Link>
         </nav>
         <div className="flex flex-col items-center justify-center gap-6 pb-10 text-center">
-          <h1 className="mx-auto font-k2d text-6xl tracking-wider text-pink-900">
+          <h1 className="mx-auto font-k2d text-6xl tracking-wider text-teal-900">
             {name}
           </h1>
           <h2 className="pb-4">{description}</h2>
