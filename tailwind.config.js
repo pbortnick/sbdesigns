@@ -80,6 +80,8 @@ module.exports = {
       backgroundImage: {
         'gold-halved':
           'linear-gradient(180deg, rgb(184, 134, 11) 50%, #fff 50%)',
+				'teal-halved':
+          'linear-gradient(180deg, #042f2e 50%, #fff 50%)',
       },
     },
   },

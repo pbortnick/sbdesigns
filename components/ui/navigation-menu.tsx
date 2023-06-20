@@ -50,7 +50,10 @@ const navigationMenuTriggerStyle = cva(
 
 const navigationMenuLinkVariants = cva(
   'inline-flex items-center justify-center rounded-md  transition-colors focus:text-accent-foreground disabled:opacity-50 disabled:pointer-events-none  data-[active]:text-primary py-2 px-4 text-sm font-medium hover:text-primary font-sans bg-transparent hover:underline underline-offset-4 md:text-base',
-  { variants: { active: { true: 'border-r-2 border-l-2' } } }
+  { variants: { 
+		active: { true: 'border-r-2 border-l-2' },
+		theme: { dark: 'hover:text-white text-slate-200', light: 'text-inherit' }
+	} }
 )
 
 export interface NavLinkProps
@@ -61,11 +64,11 @@ export interface NavLinkProps
 }
 
 const NavLink = React.forwardRef<HTMLAnchorElement, NavLinkProps>(
-  ({ active, children, ...props }, ref) => {
+  ({ active, theme, children, ...props }, ref) => {
     return (
       <li>
         <Link
-          className={cn(navigationMenuLinkVariants({ active }))}
+          className={cn(navigationMenuLinkVariants({ active, theme }))}
           ref={ref}
           {...props}
         >
