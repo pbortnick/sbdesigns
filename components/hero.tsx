@@ -15,7 +15,7 @@ export default function Hero() {
         alt="clean living room with 2 chairs and a couch"
         src="/hero.jpg"
         width={1920}
-        height={1279}
+        height={1080}
         className="mx-auto -mt-10 h-auto max-h-[500px] w-full max-w-[90%] object-cover object-center"
         priority
       />
