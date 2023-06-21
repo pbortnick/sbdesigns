@@ -16,13 +16,13 @@ const navLinks = [
   { text: 'About', href: '/about' },
 ]
 
-export default function MainNav({ className }: { className?: string }) {
+export default function MainNav({ className, theme = 'light' }: { className?: string; theme?: 'dark' | 'light' }) {
   const pathname = usePathname()
   return (
     <NavigationMenu className={className}>
       <NavigationMenuList>
         {navLinks.map(({ href, text }) => (
-          <NavLink key={text} href={href} active={pathname === href}>
+          <NavLink key={text} href={href} active={pathname === href} theme={theme}>
             {text}
           </NavLink>
         ))}

@@ -2,7 +2,7 @@ import { Mail, Phone } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="w-100 flex flex-col gap-4 bg-orange-950 px-8 py-16 text-white">
+    <footer className="w-100 flex flex-col gap-4 bg-teal-950 px-8 py-16 text-white">
       <p className="font-k2d text-xl">SB Designs</p>
       <p className="text-md font-serif font-normal">
         Contact me! I&lsquo;d love to connect with you.

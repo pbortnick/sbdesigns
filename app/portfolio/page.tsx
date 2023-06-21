@@ -11,7 +11,7 @@ import { projects } from '@/lib/projects'
 export default function PortfolioPage() {
   return (
     <>
-      <h1 className="mx-auto font-k2d text-6xl tracking-wider text-pink-900">
+      <h1 className="mx-auto font-k2d text-6xl tracking-wider text-teal-900">
         Portfolio
       </h1>
       <h2>Learn more about each home by clicking the card</h2>
