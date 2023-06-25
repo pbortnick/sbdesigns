@@ -30,14 +30,14 @@ export default function About() {
       <MainNav />
       <Container className="pt-12 pb-36">
         <div className="grid pb-8 gap-10">
-          <h1 className="mx-auto text-center font-k2d text-6xl tracking-wider text-teal-600">
+          <h1 className="mx-auto text-center font-k2d text-4xl md:text-6xl tracking-wider text-teal-700">
             Testimonials
           </h1>
-          <hr className="mx-auto h-4 w-3/4 bg-teal-700 rounded" />
+          <hr className="mx-auto h-2 md:h-4 w-3/4 bg-teal-800 rounded" />
 					<ul className="grid gap-8 ">
 						{testimonials.map(({ name, location, quote, image, link}) => (
 							<li key={name} className="group grid grid-cols-1 md:grid-cols-6 gap-8">
-								<div className="col-span-3 p-10 md:group-odd:order-last">
+								<div className="md:col-span-3 p-6 pb-0 md:p-10 md:pb-10 md:group-odd:order-last">
 									<div className="relative w-full h-full group cursor-pointer">
 										<Link className="inset-0 absolute z-10" href={link} />
 										<Image {...image} alt={image.alt} className="rounded group-hover:opacity-50"/>
@@ -47,7 +47,7 @@ export default function About() {
 										</div>
 									</div>
 								</div>
-								<div className="flex flex-col text-center col-span-3 justify-center">
+								<div className="flex flex-col text-center md:col-span-3 justify-center">
 									<h2 className="font-k2d pb-2 text-2xl">{name}</h2>
 									<p className="font-sans">{location}</p>
 									<div className="pt-4">

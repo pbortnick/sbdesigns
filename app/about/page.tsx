@@ -31,7 +31,7 @@ export default function About() {
           <h1 className="mx-auto text-center font-k2d text-6xl tracking-wider">
             Meet Sherry
           </h1>
-          <hr className="mx-auto h-1 w-3/4 bg-gold" />
+					<hr className="mx-auto h-2 md:h-4 w-3/4 bg-teal-800 rounded" />
           <div className="flex flex-col py-10">
             <div className="mx-auto pl-6">
               <Image
