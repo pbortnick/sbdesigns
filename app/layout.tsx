@@ -31,9 +31,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${k2d.variable} ${josefinSans.variable}`}
+        className={`${inter.variable} ${k2d.variable} ${josefinSans.variable} flex flex-col h-screen`}
       >
+				<main className="flex-1">
         {children}
+				</main>
         <Footer />
       </body>
     </html>

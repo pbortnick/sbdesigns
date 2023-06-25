@@ -3,10 +3,7 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: [
-    'standard-with-typescript',
-    'plugin:react/recommended'
-  ],
+  extends: ['next/core-web-vitals', 'eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
   overrides: [
     {
       env: {
@@ -24,8 +21,13 @@ module.exports = {
     ecmaVersion: 'latest'
   },
   plugins: [
-    'react'
+    'react',
+		'@typescript-eslint'
   ],
+	parser: '@typescript-eslint/parser',
+
   rules: {
-  }
+  },
+	root: true,
+
 }
