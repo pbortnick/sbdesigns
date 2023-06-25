@@ -191,8 +191,8 @@ const projects: Array<ProjectProps> = [
         height: 1736,
       },
     ],
-    name: 'Funky NYC',
-    slug: 'funky-nyc',
+    name: 'NYC',
+    slug: 'nyc',
     description:
       'When we say funky we mean an apartment full of personality designed with bright colors and textured walls.',
     details: [

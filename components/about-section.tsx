@@ -4,7 +4,7 @@ import { Button } from './ui/button'
 
 export default function AboutSection() {
   return (
-    <Container className="flex flex-col items-center justify-center gap-10 py-14 font-sans">
+    <Container className="flex flex-col items-center justify-center gap-10 py-14 font-sans flex-grow">
       <h2 className="text-center text-4xl font-bold">
         Feel at home in your home.
       </h2>

@@ -6,10 +6,8 @@ export default function Home() {
   return (
     <>
       <MainNav className="bg-teal-950 pb-8 md:pb-6" theme="dark"/>
-      <main>
-        <Hero />
-        <AboutSection />
-      </main>
+			<Hero />
+			<AboutSection />
     </>
   )
 }

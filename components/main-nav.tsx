@@ -14,6 +14,7 @@ const navLinks = [
   },
   { text: 'Portfolio', href: '/portfolio' },
   { text: 'About', href: '/about' },
+	{ text: 'Testimonials', href: '/testimonials' },
 ]
 
 export default function MainNav({ className, theme = 'light' }: { className?: string; theme?: 'dark' | 'light' }) {
