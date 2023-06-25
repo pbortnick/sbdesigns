@@ -8,7 +8,7 @@ export default function PortfolioLayout({
   children: React.ReactNode
 }) {
   return (
-    <Container className="flex flex-col items-center gap-10 pb-14 font-sans">
+    <Container className="flex flex-col items-center gap-10 pb-36 font-sans">
       <MainNav />
       {children}
     </Container>

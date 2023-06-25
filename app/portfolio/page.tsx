@@ -6,7 +6,7 @@ import {
   CardThumbnail,
   CardTitle,
 } from '@/components/ui/card'
-import { projects } from '@/lib/projects'
+import { projects } from '@/lib/data/projects'
 
 export default function PortfolioPage() {
   return (
