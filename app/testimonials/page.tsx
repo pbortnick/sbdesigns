@@ -5,6 +5,25 @@ import { testimonials } from '@/lib/data/testimonials'
 import Link from 'next/link'
 import { Quote } from 'lucide-react'
 
+export const metadata = {
+  title: 'SB Designs - Testimonials',
+  description: `I work to have an understanding of my clients' style preferences which I use to create an environment where they feel happy, comfortable, and, most importantly, at home.`,
+  openGraph: {
+    images: ['https://www.sbdesigns516.com/og-image.png'],
+  },
+  twitter: {
+    images: ['https://www.sbdesigns516.com/og-image.png'],
+  },
+  icons: {
+    icon: '/favicon.ico',
+  },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 3,
+  },
+}
+
 export default function About() {
   return (
     <>

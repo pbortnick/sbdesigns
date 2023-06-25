@@ -1,6 +1,5 @@
 import './globals.css'
 import { inter, k2d, josefinSans } from 'lib/fonts'
-import Head from 'next/head'
 import Footer from '@/components/footer'
 import { type Metadata } from 'next'
 
