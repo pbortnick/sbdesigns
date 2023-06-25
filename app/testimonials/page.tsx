@@ -20,7 +20,7 @@ export default function About() {
 							<li key={name} className="group grid grid-cols-1 md:grid-cols-6 gap-8">
 								<div className="col-span-3 p-10 md:group-odd:order-last">
 									<div className="relative w-full h-full group cursor-pointer">
-										<Link className="inset-0 absolute" href={link} />
+										<Link className="inset-0 absolute z-10" href={link} />
 										<Image {...image} alt={image.alt} className="rounded group-hover:opacity-50"/>
 										<div className="hidden group-hover:flex absolute inset-0 bg-slate-500 bg-opacity-50 rounded" />
 										<div className="hidden group-hover:flex absolute inset-0 justify-center items-center bg-transparent">
