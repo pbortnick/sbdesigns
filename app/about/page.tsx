@@ -28,10 +28,10 @@ export default function About() {
       <MainNav />
       <Container className="py-12">
         <div className="grid gap-6 pb-8">
-          <h1 className="mx-auto text-center font-k2d text-6xl tracking-wider">
+				<h1 className="mx-auto text-center font-k2d text-4xl md:text-6xl tracking-wider text-teal-700">
             Meet Sherry
           </h1>
-					<hr className="mx-auto h-2 md:h-4 w-3/4 bg-teal-800 rounded" />
+          <hr className="mx-auto h-2 md:h-4 w-3/4 bg-teal-800 rounded" />
           <div className="flex flex-col py-10">
             <div className="mx-auto pl-6">
               <Image
