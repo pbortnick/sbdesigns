@@ -1,0 +1,328 @@
+{
+	"projects": [
+		{
+			"coverImage": {
+				"src": "/portfolio/jericho/kitchen.jpeg",
+				"alt": "kitchen",
+				"width": 760,
+				"height": 760
+			},
+			"images": [
+				{
+					"src": "/portfolio/jericho/kitchen.jpeg",
+					"alt": "",
+					"width": 1071,
+					"height": 1000
+				},
+				{
+					"src": "/portfolio/jericho/den.jpeg",
+					"alt": "",
+					"width": 1514,
+					"height": 1136
+				},
+				{
+					"src": "/portfolio/jericho/pool-night.jpeg",
+					"alt": "",
+					"width": 852,
+					"height": 1136
+				},
+				{
+					"src": "/portfolio/jericho/backyard.jpeg",
+					"alt": "",
+					"width": 1514,
+					"height": 1136
+				}
+			],
+			"name": "Jericho",
+			"slug": "jericho",
+			"description": "A suburban home that gives the feel of a secluded island resort.",
+			"details": [
+				{
+					"heading": "Size",
+					"content": "3500 sqft"
+				},
+				{
+					"heading": "Space",
+					"content": "Rooms: 5 beds, 2 living spaces, kitchen, backyard"
+				},
+				{
+					"heading": "Features",
+					"content": "Backyard renovation with pool"
+				}
+			]
+		},
+		{
+			"coverImage": {
+				"src": "/portfolio/downtown-nyc/living.jpeg",
+				"alt": "living room",
+				"width": 1302,
+				"height": 1736
+			},
+			"images": [
+				{
+					"src": "/portfolio/downtown-nyc/living.jpeg",
+					"alt": "",
+					"width": 1302,
+					"height": 1736
+				},
+				{
+					"src": "/portfolio/downtown-nyc/living-2.jpeg",
+					"alt": "",
+					"width": 1302,
+					"height": 1736
+				},
+				{
+					"src": "/portfolio/downtown-nyc/kitchen.jpeg",
+					"alt": "",
+					"width": 1302,
+					"height": 1736
+				},
+				{
+					"src": "/portfolio/downtown-nyc/kitchen-2.jpeg",
+					"alt": "",
+					"width": 2170,
+					"height": 1627
+				},
+				{
+					"src": "/portfolio/downtown-nyc/bedroom.jpeg",
+					"alt": "",
+					"width": 1302,
+					"height": 1736
+				}
+			],
+			"name": "Downtown NYC",
+			"slug": "downtown-nyc",
+			"description": "A modern urban retreat in the heart of Manhattan, blending sophistication with city energy.",
+			"details": [
+				{
+					"heading": "Location",
+					"content": "Manhattan, New York"
+				},
+				{
+					"heading": "Space",
+					"content": "Living room, kitchen, bedroom"
+				},
+				{
+					"heading": "Style",
+					"content": "Urban Residential"
+				}
+			]
+		},
+		{
+			"coverImage": {
+				"src": "/portfolio/ftl/living-room.jpeg",
+				"alt": "living room",
+				"width": 1059,
+				"height": 953
+			},
+			"images": [
+				{
+					"src": "/portfolio/ftl/living-room.jpeg",
+					"alt": "",
+					"width": 1059,
+					"height": 953
+				},
+				{
+					"src": "/portfolio/ftl/dining.jpeg",
+					"alt": "",
+					"width": 1471,
+					"height": 1736
+				},
+				{
+					"src": "/portfolio/ftl/bedroom.jpeg",
+					"alt": "",
+					"width": 2170,
+					"height": 1627
+				},
+				{
+					"src": "/portfolio/ftl/bathroom.jpeg",
+					"alt": "",
+					"width": 1302,
+					"height": 1736
+				},
+				{
+					"src": "/portfolio/ftl/balcony.jpeg",
+					"alt": "",
+					"width": 1302,
+					"height": 1736
+				}
+			],
+			"name": "Fort Lauderdale",
+			"slug": "ftl",
+			"description": "A coastal Florida home designed for effortless indoor-outdoor living and sun-drenched comfort.",
+			"details": [
+				{
+					"heading": "Location",
+					"content": "Fort Lauderdale, Florida"
+				},
+				{
+					"heading": "Space",
+					"content": "Living room, dining, bedroom, bathroom, balcony"
+				},
+				{
+					"heading": "Style",
+					"content": "Coastal Living"
+				}
+			]
+		},
+		{
+			"coverImage": {
+				"src": "/portfolio/funky-nyc/living.jpeg",
+				"alt": "living room",
+				"width": 1301,
+				"height": 1736
+			},
+			"images": [
+				{
+					"src": "/portfolio/funky-nyc/living.jpeg",
+					"alt": "",
+					"width": 1301,
+					"height": 1736
+				},
+				{
+					"src": "/portfolio/funky-nyc/area.jpeg",
+					"alt": "",
+					"width": 2170,
+					"height": 1627
+				},
+				{
+					"src": "/portfolio/funky-nyc/art.jpeg",
+					"alt": "",
+					"width": 1338,
+					"height": 1736
+				},
+				{
+					"src": "/portfolio/funky-nyc/bed.jpeg",
+					"alt": "",
+					"width": 2170,
+					"height": 1627
+				},
+				{
+					"src": "/portfolio/funky-nyc/bed-2.jpeg",
+					"alt": "",
+					"width": 1302,
+					"height": 1736
+				}
+			],
+			"name": "Funky NYC",
+			"slug": "funky-nyc",
+			"description": "A bold, eclectic New York City apartment full of personality and curated artistic flair.",
+			"details": [
+				{
+					"heading": "Location",
+					"content": "New York City, New York"
+				},
+				{
+					"heading": "Space",
+					"content": "Living area, bedroom, accent spaces"
+				},
+				{
+					"heading": "Style",
+					"content": "Modern Eclectic"
+				}
+			]
+		},
+		{
+			"coverImage": {
+				"src": "/portfolio/lakehouse/living.jpeg",
+				"alt": "living room",
+				"width": 1182,
+				"height": 807
+			},
+			"images": [
+				{
+					"src": "/portfolio/lakehouse/living.jpeg",
+					"alt": "",
+					"width": 1182,
+					"height": 807
+				},
+				{
+					"src": "/portfolio/lakehouse/kitchen.jpeg",
+					"alt": "",
+					"width": 1460,
+					"height": 972
+				},
+				{
+					"src": "/portfolio/lakehouse/kitchen-2.jpeg",
+					"alt": "",
+					"width": 1178,
+					"height": 785
+				},
+				{
+					"src": "/portfolio/lakehouse/dining.jpeg",
+					"alt": "",
+					"width": 1189,
+					"height": 821
+				},
+				{
+					"src": "/portfolio/lakehouse/dining-2.jpeg",
+					"alt": "",
+					"width": 1192,
+					"height": 441
+				}
+			],
+			"name": "Lakehouse",
+			"slug": "lakehouse",
+			"description": "A serene lakeside escape where natural materials and warm tones create a peaceful, grounded retreat.",
+			"details": [
+				{
+					"heading": "Space",
+					"content": "Living room, kitchen, dining areas"
+				},
+				{
+					"heading": "Style",
+					"content": "Lakeside Retreat"
+				},
+				{
+					"heading": "Features",
+					"content": "Open-plan layout with natural finishes"
+				}
+			]
+		},
+		{
+			"coverImage": {
+				"src": "/portfolio/manhattan/living.jpeg",
+				"alt": "living room",
+				"width": 2170,
+				"height": 1627
+			},
+			"images": [
+				{
+					"src": "/portfolio/manhattan/living.jpeg",
+					"alt": "",
+					"width": 2170,
+					"height": 1627
+				},
+				{
+					"src": "/portfolio/manhattan/living-2.jpeg",
+					"alt": "",
+					"width": 2170,
+					"height": 1627
+				},
+				{
+					"src": "/portfolio/manhattan/dining.jpeg",
+					"alt": "",
+					"width": 1302,
+					"height": 1736
+				}
+			],
+			"name": "Manhattan",
+			"slug": "manhattan",
+			"description": "A refined Manhattan residence where classic elegance meets contemporary comfort.",
+			"details": [
+				{
+					"heading": "Location",
+					"content": "Manhattan, New York"
+				},
+				{
+					"heading": "Space",
+					"content": "Living room, dining room"
+				},
+				{
+					"heading": "Style",
+					"content": "Urban Chic"
+				}
+			]
+		}
+	]
+}
