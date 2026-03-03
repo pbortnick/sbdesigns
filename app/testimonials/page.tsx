@@ -1,70 +1,114 @@
-import Container from '@/components/container'
-import MainNav from '@/components/main-nav'
-import Image from 'next/image'
-import { testimonials } from '@/lib/data/testimonials'
-import Link from 'next/link'
-import { Quote } from 'lucide-react'
+import Image from "next/image";
+import testimonialData from "./testimonials.json";
 
 export const metadata = {
-  title: 'SB Designs - Testimonials',
-  description: `I work to have an understanding of my clients' style preferences which I use to create an environment where they feel happy, comfortable, and, most importantly, at home.`,
-  openGraph: {
-    images: ['https://www.sbdesigns516.com/og-image.png'],
-  },
-  twitter: {
-    images: ['https://www.sbdesigns516.com/og-image.png'],
-  },
-  icons: {
-    icon: '/favicon.ico',
-  },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 3,
-  },
-}
+	title: "Testimonials — SB Designs",
+	description:
+		"What clients say about working with Sherry Bortnick of SB Designs.",
+};
 
-export default function About() {
-  return (
-    <>
-      <MainNav />
-      <Container className="pt-12 pb-36">
-        <div className="grid pb-8 gap-10">
-          <h1 className="mx-auto text-center font-k2d text-4xl md:text-6xl tracking-wider text-teal-700">
-            Testimonials
-          </h1>
-          <hr className="mx-auto h-2 md:h-4 w-3/4 bg-teal-800 rounded" />
-					<ul className="grid gap-8 ">
-						{testimonials.map(({ name, location, quote, image, link}) => (
-							<li key={name} className="group grid grid-cols-1 md:grid-cols-6 gap-8">
-								<div className="md:col-span-3 p-6 pb-0 md:p-10 md:pb-10 md:group-odd:order-last">
-									<div className="relative w-full h-full group cursor-pointer">
-										<Link className="inset-0 absolute z-10" href={link} />
-										<Image {...image} alt={image.alt} className="rounded group-hover:opacity-50"/>
-										<div className="hidden group-hover:flex absolute inset-0 bg-slate-500 bg-opacity-50 rounded" />
-										<div className="hidden group-hover:flex absolute inset-0 justify-center items-center bg-transparent">
-											<span className="text-xl text-white">View details</span>
-										</div>
-									</div>
-								</div>
-								<div className="flex flex-col text-center md:col-span-3 justify-center">
-									<h2 className="font-k2d pb-2 text-2xl">{name}</h2>
-									<p className="font-sans">{location}</p>
-									<div className="pt-4">
-										<div className="inline-block">
-											<Quote stroke="#319795" size={20} transform="scale(-1,1)"/>
-										</div>
-										<p className="font-sans text-sm font-light px-2 inline">{quote}</p>
-										<div className="inline-block">
-											<Quote stroke="#319795" size={20} />
-										</div>
-									</div>
-								</div>
-							</li>
-						))}
-					</ul>
+export default function TestimonialsPage() {
+	const { testimonials } = testimonialData;
+
+	return (
+		<div
+			className="min-h-screen"
+			style={{ fontFamily: "var(--font-jost), sans-serif" }}
+		>
+
+
+			{/* Hero */}
+			<section className="relative h-80 flex items-end justify-center overflow-hidden">
+				<div
+					className="absolute inset-0"
+					style={{
+						background:
+							"linear-gradient(180deg, #0f3d3a 0%, #134e4a 60%, #1a5c51 100%)",
+					}}
+				></div>
+				<div className="relative z-10 text-center text-white px-6 pb-12">
+					<p className="text-teal-400 text-xs tracking-[0.4em] uppercase mb-4">
+						Reviews
+					</p>
+					<h1
+						className="text-6xl sm:text-7xl font-light leading-none"
+						style={{
+							fontFamily: "var(--font-cormorant), serif",
+							fontWeight: 300,
+						}}
+					>
+						What Clients Say
+					</h1>
+					<div className="w-12 h-px bg-teal-400/70 m-0 mx-auto mt-6"></div>
 				</div>
-      </Container>
-    </>
-  )
+			</section>
+
+			{/* Testimonials */}
+			<section
+				className="py-32 px-6"
+				style={{
+					background:
+						"linear-gradient(160deg, #f8fafa 0%, #eef5f5 40%, #f5f0ee 100%)",
+				}}
+			>
+				<div className="max-w-5xl mx-auto space-y-36">
+					{testimonials.map((t, i) => (
+						<article
+							key={t.name}
+							className={`flex flex-col ${i % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"} gap-16 lg:gap-20 items-center`}
+						>
+							{/* Image */}
+							<div className="w-full lg:w-1/2 shrink-0">
+								<div
+									className="relative overflow-hidden shadow-lg"
+									style={{ aspectRatio: `${t.image.width}/${t.image.height}` }}
+								>
+									<Image
+										src={t.image.src}
+										alt={t.image.alt}
+										width={t.image.width}
+										height={t.image.height}
+										className="object-cover w-full h-full"
+									/>
+								</div>
+							</div>
+
+							{/* Content */}
+							<div className="w-full lg:w-1/2 py-6">
+								{/* Quote mark */}
+								<div
+									className="text-teal-300/60 mb-2 leading-none select-none"
+									style={{
+										fontFamily: "var(--font-cormorant), serif",
+										fontSize: "8rem",
+										lineHeight: 1,
+									}}
+									aria-hidden="true"
+								>
+									&ldquo;
+								</div>
+								<p className="text-gray-600 text-base leading-[1.9] mb-10 -mt-8">
+									{t.quote}
+								</p>
+								<div className="flex items-center gap-5">
+									<div className="w-12 h-px bg-teal-400"></div>
+									<div>
+										<p
+											className="text-gray-800 text-xl font-light tracking-wide"
+											style={{ fontFamily: "var(--font-cormorant), serif" }}
+										>
+											{t.name}
+										</p>
+										<p className="text-teal-600 text-xs tracking-[0.25em] uppercase mt-1">
+											{t.location}
+										</p>
+									</div>
+								</div>
+							</div>
+						</article>
+					))}
+				</div>
+			</section>
+		</div>
+	);
 }
